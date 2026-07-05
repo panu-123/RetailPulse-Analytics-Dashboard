@@ -25,6 +25,13 @@ The Sales Trend chart displays revenue patterns over time with two trend lines:
 - **Upper trend line**: Represents peak sales periods with fluctuations ranging from 0k to 65k
 - **Lower trend line**: Shows baseline sales performance
 
+```mermaid
+graph LR
+    A["Sales Trend"] --> B["Peak: 65k"]
+    A --> C["Baseline: Variable"]
+    B --> D["Cyclical Patterns"]
+```
+
 **Key Insights:**
 - Cyclical sales patterns visible with regular peaks and troughs
 - Helps identify seasonal trends and sales cycles
@@ -34,11 +41,12 @@ The Sales Trend chart displays revenue patterns over time with two trend lines:
 
 ### 3. City-wise Sales Performance
 
-Bar chart comparing sales across major cities:
-- **Mumbai**: ~300k in revenue (highest performer)
-- **Pune**: ~350k (strong performer)
-- **Bangalore**: ~350k (consistent performer)
-- **Delhi**: ~200k (growth opportunity)
+| City | Revenue | Performance |
+|------|---------|-------------|
+| Mumbai | $300k | Highest |
+| Pune | $350k | Strong |
+| Bangalore | $350k | Consistent |
+| Delhi | $200k | Growth Opportunity |
 
 This breakdown helps identify geographical performance and regional strengths.
 
@@ -46,10 +54,12 @@ This breakdown helps identify geographical performance and regional strengths.
 
 ### 4. Category Distribution
 
-Pie chart showing market share by product category:
-- **Electronics**: 85.1% (dominant category)
-- **Fashion**: Smaller segment
-- **Accessories**: Minimal segment
+```mermaid
+pie title Category Distribution
+    "Electronics" : 85.1
+    "Fashion" : 10
+    "Accessories" : 4.9
+```
 
 Electronics clearly dominates the product portfolio, driving the majority of revenue.
 
@@ -57,18 +67,17 @@ Electronics clearly dominates the product portfolio, driving the majority of rev
 
 ### 5. Revenue vs Profit Analysis
 
-Scatter plot visualization showing the relationship between Revenue and Profit across categories:
-- **Electronics**: Highest revenue (~$1.2M) with strong profit margins (~$180k)
-- **Fashion**: Mid-range revenue (~$150k) with proportional profit
-- **Accessories**: Lower revenue with minimal profit impact
+| Category | Revenue | Profit | Margin |
+|----------|---------|--------|--------|
+| Electronics | $1.2M | $180k | 15% |
+| Fashion | $150k | $30k | 20% |
+| Accessories | $30k | $4.7k | 16% |
 
 This analysis reveals which product categories deliver the best profitability relative to sales volume.
 
 ---
 
 ### 6. Profit Distribution by City and Category
-
-Stacked horizontal bar chart showing profit composition:
 
 **Mumbai**
 - Electronics: Primary revenue driver
@@ -100,11 +109,14 @@ Stacked horizontal bar chart showing profit composition:
 - **Regular Customers**: ~600k revenue (volume segment)
 
 **Top 5 Products by Revenue**
-- Laptop: ~700k (market leader)
-- Mobile: ~350k (strong performer)
-- Shoes: ~150k
-- Tablet: ~200k
-- Others: ~100k
+
+| Rank | Product | Revenue | Status |
+|------|---------|---------|--------|
+| 1 | Laptop | ~700k | Market Leader |
+| 2 | Mobile | ~350k | Strong Performer |
+| 3 | Tablet | ~200k | Growing |
+| 4 | Shoes | ~150k | Steady |
+| 5 | Others | ~100k | Emerging |
 
 ---
 
